@@ -2,7 +2,7 @@
 import os
 
 #first we import flask
-from flask import Flask
+from flask import Flask, render_template
 
 #now we create our flask class instance and storing it in our app variable
 #the first argument of the flask class is the name of the module we ill use
@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     #instead of running a code snippet we can serve an HTML file using render templates
-    return "Hello World"
+    return render_template("index.html")
 
 #now we get our app running with the following argument
 #this arguments states if our app script is top level and only allows our code to run
