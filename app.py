@@ -12,6 +12,7 @@ app = Flask(__name__)
 #routing decorators allow us to tell functions to route to our main pages based on the url
 @app.route("/")
 def index():
+    #instead of running a code snippet we can serve an HTML file using render templates
     return "Hello World"
 
 #now we get our app running with the following argument
@@ -27,3 +28,5 @@ if __name__ == "__main__":
     )
 
 #having this will allow us to then use "python3 run.py" (or app.py) to run our app
+#we should always have debug off if we are running production / submission, make sure to
+#turn this off if we're not in dev
