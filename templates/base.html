@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <meta charset="utf-8" />
+
+    <title>Nomadica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Embark on a thrilling journey through the cosmos in Nomadica, an indie space exploration game. Discover uncharted planets and unravel the mysteries of the universe. Available on PC and console." />
+    <meta name="keywords" content="Nomadica, space exploration, indie game, PC game, console game, space adventure, uncharted planets, universe mysteries">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <section id="header">
+        <div class="desktop-nav">
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}" class="text-uppercase">Home</a>
+                <a href="{{ url_for('index') }}" class="text-uppercase">News</a>
+                <a href="{{ url_for('index') }}" class="text-uppercase">Support</a>
+            </div>
+            <div class="nav-logo">
+                <img src="./assets/images/mediaLogos/logo.png" alt="navimg">
+            </div>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}" class="text-uppercase">Wiki</a>
+                <a href="{{ url_for('index') }}" class="text-uppercase">Discord</a>
+                <a href="{{ url_for('index') }}" class="text-uppercase">Buy</a>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <button class="nav-toggle" id="nomadica-btn">Nomadica</button>
+            <button class="purchase-btn" id="purchase-btn">Purchase</button>
+        </div>
+        <div class="dropdown nomadica" id="menu-dropdown" style="display: none;">
+            <a href="{{ url_for('index') }}" class="text-uppercase">Home</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase">News</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase">Support</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase">Wiki</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase">Discord</a>
+        </div>
+        <div class="dropdown purchase" id="purchase-dropdown" style="display: none;">
+            <a href="{{ url_for('index') }}" class="text-uppercase"><i class="fab fa-steam-symbol"></i> Steam</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase"><img src="./assets/images/mediaLogos/epic.png" class="market-img" alt="epic logo"> Epic Games</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase"><i class="fab fa-xbox"></i> Xbox</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase"><i class="fab fa-playstation"></i> Playstation</a>
+            <a href="{{ url_for('index') }}" class="text-uppercase"><img src="./assets/images/mediaLogos/switch.webp" class="market-img" alt="switch logo"> Switch</a>
+        </div>
+      </nav>
+    
+      <!-- HEader and hero-->
+      <div class="hero">
+        <img src="./assets/images/hero.png" alt="hero image for nomadica" class="hero-image" >
+      </div>
+    </section>
+    <!-- our inserted content goes here -->
+    {% block content %}
+    {% endblock %}
+    <footer style="background-color: #0a0a0a; color: #fff; padding: 20px; text-align: center;">
+        <section class="social-media ">
+            <h2 class="text-uppercase">More Nomadica In These Spaces</h2>
+            <div class="media-links">
+              <a href="https://www.facebook.com/Nomadica" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+                <p>Facebook</p>
+              </a>
+              <a href="https://www.twitter.com/NomadicaGame" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+                <p>Twitter</p>
+              </a>
+              <a href="https://www.instagram.com/Nomadica" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+              </a>
+              <a href="https://www.youtube.com/c/Nomadica" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <p>Youtube</p>
+              </a>
+            </div>
+        </section>
+        <br>
+        <button class ="btn btn-success btn-xl" data-toggle="modal" data-target="#signUpModal">Newsletter Signup</button>
+        <section class="company-details">
+            <div class="logo">
+                <div class="icon">
+                    <img src="./assets/images/mediaLogos/logo.png" alt="space gamers logo" style="width:100px">
+                </div>
+                <p class="brand-name">SPACE GAMERS</p>
+            </div>
+            <div class="footer-links text-uppercase">
+              <p>
+                <span>SHA ANDER DEVELOPMENT © 2024</span>
+                <span class="text-break">|</span>
+                <a href="#">Presskit</a>
+                <span class="text-break">|</span>
+                <a href="#">Contact</a>
+                <span class="text-break">|</span>
+                <a href="#">Privacy Policy</a>
+                <span class="text-break">|</span>
+                <a href="#">Jobs</a>
+              </p>
+            </div>
+        </section>
+        <!-- Modal for signup goes here, as it's not really part of the main body and will only show up when we hit signup-->
+        <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+          <div class="modal-dialog" role="document">
+      
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Signup To Our Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email">Signup Via Email:</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email field" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+        <script
+        async
+        src="https://kit.fontawesome.com/c58c064348.js"
+        crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>

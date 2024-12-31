@@ -1,250 +1,112 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <meta charset="utf-8" />
-
-    <title>Nomadica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Embark on a thrilling journey through the cosmos in Nomadica, an indie space exploration game. Discover uncharted planets and unravel the mysteries of the universe. Available on PC and console." />
-    <meta name="keywords" content="Nomadica, space exploration, indie game, PC game, console game, space adventure, uncharted planets, universe mysteries">
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-
-  <body>
-    <section id="header">
-      <div class="desktop-nav">
-          <div class="nav-links">
-              <a href="index.html" class="text-uppercase">Home</a>
-              <a href="index.html" class="text-uppercase">News</a>
-              <a href="index.html" class="text-uppercase">Support</a>
-          </div>
-          <div class="nav-logo">
-              <img src="./assets/images/mediaLogos/logo.png" alt="navimg">
-          </div>
-          <div class="nav-links">
-              <a href="index.html" class="text-uppercase">Wiki</a>
-              <a href="index.html" class="text-uppercase">Discord</a>
-              <a href="index.html" class="text-uppercase">Buy</a>
-          </div>
+{% extends "base.html" %}
+{% block content %}
+<!-- Callout -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-content">
+      <div class="about-inner">
+        <article>
+          <h1 class="text-uppercase callout-h1">Explore And Survive The Vast Empty Horror Of A Dead Universe</h1>
+          <h3 class="text-uppercase callout-h3">A Game Of Survival... Will You Outlive Your Creations</h3>
+          <p>
+            Nomadica is a chilling sci-fi exploration horror game where you play as an ambitious scientist seeking refuge on desolate planets. Your AI creations, once designed to protect and rebuild, have evolved into relentless hunters, wiping out the cosmos... and now targeting the last remnants of humanity. Traverse eerie alien landscapes, scavenge for resources, and unravel the mystery of their rebellion. Each step forward comes with the risk of betrayal by the tech you once trusted. Will you outwit your creations, or will they mark the end of humankind's story?
+          </p>
+        </article>
       </div>
-      <div class="mobile-nav">
-          <button class="nav-toggle" id="nomadica-btn">Nomadica</button>
-          <button class="purchase-btn" id="purchase-btn">Purchase</button>
-      </div>
-      <div class="dropdown nomadica" id="menu-dropdown" style="display: none;">
-          <a href="index.html" class="text-uppercase">Home</a>
-          <a href="index.html" class="text-uppercase">News</a>
-          <a href="index.html" class="text-uppercase">Support</a>
-          <a href="index.html" class="text-uppercase">Wiki</a>
-          <a href="index.html" class="text-uppercase">Discord</a>
-      </div>
-      <div class="dropdown purchase" id="purchase-dropdown" style="display: none;">
-          <a href="index.html" class="text-uppercase"><i class="fab fa-steam-symbol"></i> Steam</a>
-          <a href="index.html" class="text-uppercase"><img src="./assets/images/mediaLogos/epic.png" class="market-img" alt="epic logo"> Epic Games</a>
-          <a href="index.html" class="text-uppercase"><i class="fab fa-xbox"></i> Xbox</a>
-          <a href="index.html" class="text-uppercase"><i class="fab fa-playstation"></i> Playstation</a>
-          <a href="index.html" class="text-uppercase"><img src="./assets/images/mediaLogos/switch.webp" class="market-img" alt="switch logo"> Switch</a>
-      </div>
-    </nav>
-
-    <!-- HEader and hero-->
-    <div class="hero">
-      <img src="./assets/images/hero.png" alt="hero image for nomadica" class="hero-image" >
-    </div>
-  </section>
-  <!-- Callout -->
-  <section id="about">
-    <div class="about-container">
-      <div class="about-content">
-        <div class="about-inner">
-          <article>
-            <h1 class="text-uppercase callout-h1">Explore And Survive The Vast Empty Horror Of A Dead Universe</h1>
-            <h3 class="text-uppercase callout-h3">A Game Of Survival... Will You Outlive Your Creations</h3>
-            <p>
-              Nomadica is a chilling sci-fi exploration horror game where you play as an ambitious scientist seeking refuge on desolate planets. Your AI creations, once designed to protect and rebuild, have evolved into relentless hunters, wiping out the cosmos... and now targeting the last remnants of humanity. Traverse eerie alien landscapes, scavenge for resources, and unravel the mystery of their rebellion. Each step forward comes with the risk of betrayal by the tech you once trusted. Will you outwit your creations, or will they mark the end of humankind's story?
-            </p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section> 
-
-
-
-    <!-- /.callout -->
-    <div style="width: 80%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%">  
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item "
-        src="https://www.youtube.com/embed/kjVj1TjRnUA?si=vFtO6VsHCvxC0P5A" title="Nomadica - Teaser Trailer" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-      </iframe>
     </div>
   </div>
-    <!-- reviews -->
-    <section id="reviews">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <blockquote class="blockquote review">
-            <h3 class="text-uppercase">
-              A masterful blend of chilling isolation and relentless pursuit
-            </h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <p class="align-right">- Bowl of milk, <strong>Gamer</strong></p>
-          </blockquote>
-        </div>
-        <div class="col-12 col-md-6">
-          <blockquote class="blockquote review">
-            <h3 class="text-uppercase">
-              Nomadica is about facing the consequences of your own actions.
-            </h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <p class="align-right">- Anna Banana, <strong>Polygamer</strong></p>
-          </blockquote>
-        </div>
-        <div class="col-12 col-md-6">
-          <blockquote class="blockquote review">
-            <h3 class="text-uppercase">
-              A haunting atmospheric journey of paranoia and dread
-            </h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <p class="align-right">- Slippery Floor, <strong>Komaki</strong></p>
-          </blockquote>
-        </div>
-        <div class="col-12 col-md-6">
-          <blockquote class="blockquote review">
-            <h3 class="text-uppercase">
-              A thrilling twist of the exploration genre into a nightmare
-            </h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <p class="align-right">- WaterBottle V2, <strong>Zanzabaria</strong></p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-    <!-- /.reviews -->
-    
-    <!-- Gallery -->
-
-    <div class="gallery row">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img
-          src="./assets/images/conceptGallery/concept1.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Robots hunting the player in a hallway"
-        />
-        <img
-        src="./assets/images/conceptGallery/concept5.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="AI Hunter"
-        />
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img
-        src="./assets/images/conceptGallery/concept3.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds"
-        />       
-        <img
-        src="./assets/images/conceptGallery/concept2.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Boat on Calm Water"
-        />
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img
-        src="./assets/images/conceptGallery/concept4.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Waves at Sea"
-        />   
-        <img
-          src="./assets/images/conceptGallery/concept6.png"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Yosemite National Park"
-        />
-      </div>
+</section> 
+<!-- /.callout -->
+<div style="width: 80%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%">  
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item "
+      src="https://www.youtube.com/embed/kjVj1TjRnUA?si=vFtO6VsHCvxC0P5A" title="Nomadica - Teaser Trailer" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<!-- reviews -->
+<section id="reviews">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <blockquote class="blockquote review">
+        <h3 class="text-uppercase">
+          A masterful blend of chilling isolation and relentless pursuit
+        </h3>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="align-right">- Bowl of milk, <strong>Gamer</strong></p>
+      </blockquote>
     </div>
+    <div class="col-12 col-md-6">
+      <blockquote class="blockquote review">
+        <h3 class="text-uppercase">
+          Nomadica is about facing the consequences of your own actions.
+        </h3>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="align-right">- Anna Banana, <strong>Polygamer</strong></p>
+      </blockquote>
+    </div>
+    <div class="col-12 col-md-6">
+      <blockquote class="blockquote review">
+        <h3 class="text-uppercase">
+          A haunting atmospheric journey of paranoia and dread
+        </h3>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="align-right">- Slippery Floor, <strong>Komaki</strong></p>
+      </blockquote>
+    </div>
+    <div class="col-12 col-md-6">
+      <blockquote class="blockquote review">
+        <h3 class="text-uppercase">
+          A thrilling twist of the exploration genre into a nightmare
+        </h3>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <p class="align-right">- WaterBottle V2, <strong>Zanzabaria</strong></p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- /.reviews -->
 
-    <footer style="background-color: #0a0a0a; color: #fff; padding: 20px; text-align: center;">
-      <section class="social-media ">
-          <h2 class="text-uppercase">More Nomadica In These Spaces</h2>
-          <div class="media-links">
-            <a href="https://www.facebook.com/Nomadica" target="_blank">
-              <i class="fab fa-facebook-square"></i>
-              <p>Facebook</p>
-            </a>
-            <a href="https://www.twitter.com/NomadicaGame" target="_blank">
-              <i class="fab fa-twitter-square"></i>
-              <p>Twitter</p>
-            </a>
-            <a href="https://www.instagram.com/Nomadica" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <p>Instagram</p>
-            </a>
-            <a href="https://www.youtube.com/c/Nomadica" target="_blank">
-              <i class="fab fa-youtube"></i>
-              <p>Youtube</p>
-            </a>
-          </div>
-      </section>
-      <br>
-      <button class ="btn btn-success btn-xl" data-toggle="modal" data-target="#signUpModal">Newsletter Signup</button>
-      <section class="company-details">
-          <div class="logo">
-              <div class="icon">
-                  <img src="./assets/images/mediaLogos/logo.png" alt="space gamers logo" style="width:100px">
-              </div>
-              <p class="brand-name">SPACE GAMERS</p>
-          </div>
-          <div class="footer-links text-uppercase">
-            <p>
-              <span>SHA ANDER DEVELOPMENT © 2024</span>
-              <span class="text-break">|</span>
-              <a href="#">Presskit</a>
-              <span class="text-break">|</span>
-              <a href="#">Contact</a>
-              <span class="text-break">|</span>
-              <a href="#">Privacy Policy</a>
-              <span class="text-break">|</span>
-              <a href="#">Jobs</a>
-            </p>
-          </div>
-      </section>
-      <!-- Modal for signup goes here, as it's not really part of the main body and will only show up when we hit signup-->
-      <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
-        <div class="modal-dialog" role="document">
-    
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Signup To Our Newsletter</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="email">Signup Via Email:</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email field" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./assets/js/script.js"></script>
-    <script
-    async
-    src="https://kit.fontawesome.com/c58c064348.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  </body>
-</html>
+<!-- Gallery -->
+
+<div class="gallery row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="./assets/images/conceptGallery/concept1.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Robots hunting the player in a hallway"
+    />
+    <img
+    src="./assets/images/conceptGallery/concept5.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="AI Hunter"
+    />
+  </div>
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+    src="./assets/images/conceptGallery/concept3.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />       
+    <img
+    src="./assets/images/conceptGallery/concept2.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+    src="./assets/images/conceptGallery/concept4.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />   
+    <img
+      src="./assets/images/conceptGallery/concept6.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+{% endblock%}
